@@ -1,0 +1,251 @@
+#include<stdio.h>
+#include<complex.h>
+int main()
+{
+    float b,c;
+    int a,i=6;
+    char d;
+    printf("\n\n\t\t ********** Length, Time & Weight Converter **********");
+    printf("\n\n   ----------------------------------------");
+    printf("\n\t Key              Quantity");
+    printf("\n   ----------------------------------------");
+    printf("\n\t L                 Length \n\t T                 Time  \n\t W                 Weight");
+    printf("\n   ----------------------------------------");
+    printf("\n\n Enter the required key for your convertion:");
+    scanf("%c",&d);
+    if (d=='l' || d=='L')
+    {
+        printf("\n\n   ----------------------------------------");
+        printf("\n\t No.              Convertion");
+        printf("\n   ----------------------------------------");
+        printf("\n\t 1                 Km to m ");
+        printf("\n\t 2                 Km to cm ");
+        printf("\n\t 3                 Km to mm ");
+        printf("\n\t 4                 m to km ");
+        printf("\n\t 5                 m to cm ");
+        printf("\n\t 6                 m to mm ");
+        printf("\n\t 7                 cm to km ");
+        printf("\n\t 8                 cm to m ");
+        printf("\n\t 9                 cm to mm ");
+        printf("\n\t 10                mm to km ");
+        printf("\n\t 11                mm to m ");
+        printf("\n\t 12                mm to cm ");
+        printf("\n   ----------------------------------------");
+        printf("\n\n Enter the corresponding number for conversion:");
+        scanf("%d",&a);
+        if(a==1)
+        {
+            printf("\n Enter value for Km:");
+            scanf("%f",&b);
+            c=b*1000;
+            printf("===> %f Km = %f m",b,c);
+        }
+        else if(a==2)
+        {
+            printf("\n Enter value for Km:");
+            scanf("%f",&b);
+            c=b*100000;
+            printf("===> %f Km = %f cm",b,c);
+        }
+        else if(a==3)
+        {
+            printf("\n Enter value for Km:");
+            scanf("%f",&b);
+            c=b*1000000;
+            printf("===> %f Km = %f mm",b,c);
+        }
+        else if(a==4)
+        {
+            printf("\n Enter value for m:");
+            scanf("%f",&b);
+            c=b/1000;
+            printf("===> %f m = %f km",b,c);
+        }
+        else if(a==5)
+        {
+            printf("\n Enter value for m:");
+            scanf("%f",&b);
+            c=b*100;
+            printf("===> %f m = %f cm",b,c);
+        }
+        else if(a==6)
+        {
+            printf("\n Enter value for m:");
+            scanf("%f",&b);
+            c=b*1000;
+            printf("===> %f m = %f mm",b,c);
+        }
+        else if(a==7)
+        {
+            printf("\n Enter value for cm:");
+            scanf("%f",&b);
+            c=b/100000;
+            printf("===> %f cm = %f km",b,c);
+        }
+        else if(a==8)
+        {
+            printf("\n Enter value for cm:");
+            scanf("%f",&b);
+            c=b/100;
+            printf("===> %f cm = %f m",b,c);
+        }
+        else if(a==9)
+        {
+            printf("\n Enter value for cm:");
+            scanf("%f",&b);
+            c=b*10;
+            printf("===> %f cm = %f mm",b,c);
+        }
+        else if(a==10)
+        {
+            printf("\n Enter value for mm:");
+            scanf("%f",&b);
+            c=b/1000000;
+            printf("===> %f mm = %f km",b,c);
+        }
+        else if(a==11)
+        {
+            printf("\n Enter value for mm:");
+            scanf("%f",&b);
+            c=b/1000;
+            printf("===> %f mm = %f m",b,c);
+        }
+        else if(a==12)
+        {
+            printf("\n Enter value for mm:");
+            scanf("%f",&b);
+            c=b/10;
+            printf("===> %f mm = %f cm",b,c);
+        }
+        else
+            printf("\n Enter a valid number.");
+        }
+    else if(d=='t'||d=='T')
+    {
+        printf("\n\n   ----------------------------------------");
+        printf("\n\t No.              Convertion");
+        printf("\n   ----------------------------------------");
+        printf("\n\t 1                 hr to min");
+        printf("\n\t 2                 hr to sec");
+        printf("\n\t 3                 min to hr");
+        printf("\n\t 4                 min to sec");
+        printf("\n\t 5                 sec to hr");
+        printf("\n\t 6                 sec to min");
+        printf("\n   ----------------------------------------");
+        printf("\n\n Enter the corresponding number for conversion:");
+        scanf("%d",&a);
+        if(a==1)
+        {
+            printf("\n Enter value for hr:");
+            scanf("%f",&b);
+            c=b*60;
+            printf("===> %f hr = %f min",b,c);
+        }
+        else if(a==2)
+        {
+            printf("\n Enter value for hr:");
+            scanf("%f",&b);
+            c=b*3600;
+            printf("===> %f hr = %f sec",b,c);
+        }
+        else if(a==3)
+        {
+            printf("\n Enter value for min:");
+            scanf("%f",&b);
+            c=b/60;
+            printf("===> %f min = %f hr",b,c);
+        }
+        else if(a==4)
+        {
+            printf("\n Enter value for min:");
+            scanf("%f",&b);
+            c=b*60;
+            printf("===> %f min = %f sec",b,c);
+        }
+        else if(a==5)
+        {
+            printf("\n Enter value for sec:");
+            scanf("%f",&b);
+            c=b/3600;
+            printf("===> %f sec = %f hr",b,c);
+        }
+        else if(a==6)
+        {
+            printf("\n Enter value for sec:");
+            scanf("%f",&b);
+            c=b/60;
+            printf("===> %f sec = %f min",b,c);
+        }
+        else
+            printf("\n Enter the valid number.");
+    }
+    else if(d=='w'||d=='W')
+    {
+        printf("\n\n   ----------------------------------------");
+        printf("\n\t No.              Convertion");
+        printf("\n   ----------------------------------------");
+        printf("\n\t 1                 Tonne to Kg");
+        printf("\n\t 2                 Tonne to g");
+        printf("\n\t 3                 Kg to Tonne");
+        printf("\n\t 4                 Kg to g");
+        printf("\n\t 5                 g to Tonne");
+        printf("\n\t 6                 g to Kg");
+        printf("\n   ----------------------------------------");
+        printf("\n\n Enter the corresponding number for conversion:");
+        scanf("%d",&a);
+        if(a==1)
+        {
+            printf("\n Enter value for Tonne:");
+            scanf("%f",&b);
+            c=b*1000;
+            printf("===> %f Tonne = %f kg",b,c);
+        }
+        else if(a==2)
+        {
+            printf("\n Enter value for Tonne:");
+            scanf("%f",&b);
+            c=b*1000000;
+            printf("===> %f Tonne = %f g",b,c);
+        }
+        else if(a==3)
+        {
+            printf("\n Enter value for kg:");
+            scanf("%f",&b);
+            c=b/1000;
+            printf("===> %f kg = %f Tonne",b,c);
+        }
+        else if(a==4)
+        {
+            printf("\n Enter value for kg:");
+            scanf("%f",&b);
+            c=b*1000;
+            printf("===> %f kg = %f g",b,c);
+        }
+        else if(a==5)
+        {
+            printf("\n Enter value for g:");
+            scanf("%f",&b);
+            c=b/1000000;
+            printf("===> %f g = %f Tonne",b,c);
+        }
+        else if(a==6)
+        {
+            printf("\n Enter value for g:");
+            scanf("%f",&b);
+            c=b/1000;
+            printf("===> %f g = %f kg",b,c);
+        }
+        else
+            printf("\n Enter the valid number.");
+    }
+
+    else
+        printf("\n \" Enter the correct conversion needed.\" ");
+
+    printf("\n   ----------------------------------------");
+    printf("\n ");
+    return 0;
+    }
+
+
+
