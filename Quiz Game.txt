@@ -1,0 +1,192 @@
+#include<stdio.h>
+#include<time.h>
+int main()
+{
+    int score=0,opt,ans,t,b,crt=0,wrg=0;
+    char a[20];
+    printf("\t\t *******QUIZ COMPETITION******* ");
+    printf("\n Kindly, Enter your name:");
+    scanf("%s",&a);
+    printf("\n\t Welcome %s!",a);
+    printf("\n\n Game Description:\n 1.There are 10 questions in this Quiz.\n 2.For each correct answer 1 mark will be awarded.\n 3.For each wrong answer 1 mark will be deducted.");
+    printf("\n 4.You cannot go back to the previous question after entering the next question.\n 5.Kindly,Read the questions carefully and select the most suitable answer.");
+    printf("\n\n\t********************************");
+    printf("\n\t   All the best %s!",a);
+    printf("\n\t********************************");
+    printf("\n Press 1 to start   ");
+    scanf("%d",&b);
+    if(b==1)
+    {
+    printf("\n\t\t Loading...");
+    sleep(5);
+    printf("\n\t\t Let's Get Started!!!");
+    printf("\n\n\n 1. Who is the founder of C language?");
+    printf("\n 1.Dennis Ritchie \n 2.Martin\n 3.Luther Ford");
+    ans=1;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+    printf("\n\n 2. What is true about C language?");
+    printf("\n 1.Platform Independent \n 2.Machine Independent \n 3.High Level Lang");
+    ans=2;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+
+    printf("\n\n 3. Only func all C program must have is ______.");
+    printf("\n 1.add() \n 2.strlen() \n 3.main()");
+    ans=3;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+
+    printf("\n\n 4. which of the following is correct?");
+    printf("\n 1.{comment} \n 2./*comment*/ \n 3.*/comment*/");
+    ans=2;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+
+    printf("\n\n 5. which of the following is not a variable in C?");
+    printf("\n 1.float \n 2.real \n 3.int");
+    ans=2;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+
+    printf("\n\n 6. which of the following is correct operator to compare 2 variables?");
+    printf("\n 1.= \n 2.%%  \n 3.==");
+    ans=3;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+    printf("\n\n 7. All keywords in C language are in__________.");
+    printf("\n 1.Lower Case \n 2.Upper Case \n 3.Camel Case");
+    ans=1;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+    printf("\n\n 8. Which loop is an exit controlled loop?");
+    printf("\n 1.while loop \n 2.for loop \n 3.do-while loop");
+    ans=3;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+    printf("\n\n 9. What is the size of the int data type?(in bytes)");
+    printf("\n 1.2 \n 2.4 \n 3.8");
+    ans=2;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+    printf("\n\n 10.Is function overloading possible in C language?");
+    printf("\n\n 1.Yes \n 2.No");
+    ans=2;
+    printf("\n\nEnter your option:");
+    scanf("%d",&opt);
+    if(opt==ans){
+        score++;
+        crt++;
+        printf("\n Correct Answer!\n You are Rocking !!!");}
+    else
+    {
+        score--;
+        wrg++;
+        printf("\n Wrong Answer!\n Read and understand the upcoming Questions Carefully!");
+    }
+    printf("\n\t****************************");
+    printf("\n\t  Correct Answers=%d",crt);
+    printf("\n\t  Wrong Answers=%d",wrg);
+    printf("\n\t  Total Score=%d",score);
+    printf("\n\t****************************");
+    if(score>=7)
+        printf("\n Well Done %s!Congrats",a);
+    else if(score>=5 && score>7)
+        printf("\n Good,Work Harder!");
+    else
+       printf("\n You can do even better!Work Harder!");
+    }
+    else
+        printf("\n You didn't press 1....Run the code again to start the quiz...");
+    return 0;
+}
